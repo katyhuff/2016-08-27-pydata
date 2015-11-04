@@ -6,10 +6,44 @@
 
 		<title>A Computational Future for Science Education</title>
 
-                <meta name="description" content="
-                A description of the use and generation of data within nuclear 
-                engineering. This was presented at a BIDS meeting in Berkeley, 
-                CA on August 28, 2014.">
+                <meta name="description" content="Detailed computational 
+                models, massively parallelized calculations, and enormously 
+                collaborative simulation projects are increasingly integral to 
+                the advancement of science.  However, the caliber of this work 
+                is limited by a workforce lacking formal training in a 
+                reproducible, transparent, software development skill suite 
+                that is becoming increasingly essential. To address this unmet 
+                need, a number of initiatives (e.g. Software Carpentry, Data 
+                Carpentry, and The Hacker Within) have developed online 
+                resources, led short courses, and nurtured local communities 
+                addressing software development best practices such as version 
+                control and test driven code development, as well as basic 
+                skills such as UNIX mobility. In addition to unique 
+                contributions such as a Drivers License for High Performance 
+                Computing, Software Carpentry conducts workshops at research 
+                institutions around the world. These workshops seek to provide 
+                time efﬁcient introductions to essential programming languages 
+                and tools without turning “biochemists and mechanical engineers 
+                into computer scientists”. The Hacker Within similarly nurtures 
+                a peer-driven community for scientific computing skill sharing. 
+                It does so through regular meetings in a few local chapters 
+                around the world, including one at the University of Illinois.
+
+                The scalability and sustainability of these initiatives, 
+                however, is limited by the volunteer power on which they run, 
+                so their challenge will only be sustainably solved when best 
+                practices in scientific computing have penetrated the 
+                traditional science and engineering curriculum in universities. 
+                This talk will describe one new effort to embed best practices 
+                for reproducible scientific computing into traditional 
+                university curriculum. In particular, a set of open source, 
+                liberally licensed, IPython (now Jupyter) notebooks are being 
+                developed and tested to accompany a book “Effective Computation 
+                in Physics.” These interactive lecture materials lay out 
+                in-class exercises for a project-driven upper-level 
+                undergraduate course and are accordingly intended to be forked, 
+                modified and reused by professors across universities and 
+                disciplines.">
 		<meta name="author" content="Kathryn Huff">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
@@ -46,10 +80,263 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides">
 				<section>
-                                        <h1>The Hacker Within</h1>
-                                        <h2>Lessons Learned</h2>
+                                        <h1>A Computational Future</h1>
+                                        <h2>For Science Education</h2>
                                         <br/>
 					<h3>Kathryn (Katy) Huff</h3>
+				</section>
+                                <section>
+                                        <section>
+                                                <span class="fragment">
+                                                <a
+                                                  href="http://uchicago.edu"
+                                                  class="image"><img
+                                                  height="300"
+                                                  src="http://geosci.uchicago.edu/~kite/university.seal.rgb.maroon.jpg"
+                                                  alt="Physics, University of Chicago"></a>
+                                                </span>
+                                                <span class="fragment">
+                                                <a
+                                                  href="https://engr.wisc.edu/ep.html"
+                                                  class="image"><img
+                                                  height="300"
+                                                  src="https://biochem.wisc.edu/sites/default/files/intranet/medialab/clipart/UW_crest.gif"
+                                                  alt="Nuclear Engineering and Engineering Physics, University of Wisconsin - Madison"></a>
+                                                </span>
+                                                <span class="fragment">
+                                                <a
+                                                  href="http://nuc.berkeley.edu"
+                                                  class="image"><img
+                                                  height="300"
+                                                  src="http://www.berkeley.edu/brand/img/seals/ucbseal_139_540.png"
+                                                  alt="Nuclear Engineering, University of California, Berkeley"></a>
+                                                </span>
+                                        </section>
+                                        <section>
+                                                <span>
+                                                <span class="fragment fade-out">
+                                                <a
+                                                  href="http://fuelcycle.org"
+                                                  class="image"><img
+                                                  height="150"
+                                                  src="http://fuelcycle.org/_images/logo2_bike.gif"
+                                                  alt="cyclus"></a>
+                                                </span>
+                                                <span>
+                                                <span class="fragment fade-out">
+                                                <a href="http://pyrk.github.io"
+                                                  class="image"><img
+                                                  height="150"
+                                                  src="http://pyrk.github.io/_images/logo.png"
+                                                  alt="pyrk"></a>
+                                                </span>
+                                                <span class="fragment fade-out">
+                                                <a href="http://pyne.io"
+                                                  class="image"><img
+                                                  height="150"
+                                                  src="http://bids.berkeley.edu/sites/default/files/styles/450x254/public/projects/pyne-450x254.png?itok=rdkh0T8e"
+                                                  alt="pyne"></a>
+                                                </span>
+                                                <span class="fragment fade-out">
+                                                <a href="http://bids.berkeley.edu"
+                                                  class="image"><img
+                                                  height="150"
+                                                  src="http://bids.berkeley.edu/sites/all/themes/bids/logo.png"
+                                                  alt="BIDS Logo"></a>
+                                                </span>
+                                                <span>
+                                                <span class="fragment fade-out">
+                                                <a
+                                                  href="http://nssc.berkeley.edu"
+                                                  class="image"><img
+                                                  height="150"
+                                                  src="http://appliedphysics.nuc.berkeley.edu//wp-content/uploads/NSSC_newLogo_small-300x190.png"
+                                                  alt="Nuclear Science and Security Consortium"></a>
+                                                </span>
+                                                <span class="fragment fade-out">
+                                                <a
+                                                  href="http://scipy.org"
+                                                  class="image"><img
+                                                  height="150"
+                                                  src="http://scipy.org/_static/images/scipycentral.png"
+                                                  alt="Scipy"></a>
+                                                </span>
+                                                <span>
+                                                <a
+                                                  href="http://software-carpentry.org"
+                                                  class="image"><img
+                                                  height="150"
+                                                  src="http://bids.berkeley.edu/sites/default/files/styles/450x254/public/projects/software-carpentry-450x254.png?itok=0XnUCwrr"
+                                                  alt="Software Carpentry"></a>
+                                                </span>
+                                                <a
+                                                  href="http://thehackerwithin.github.io"
+                                                  class="image"><img
+                                                  height="150"
+                                                  src="http://thehackerwithin.github.io/images/thw_icon.png"
+                                                  alt="THW"></a>
+                                                </span>
+                                                <span>
+                                                <a
+                                                  href="http://physics.codes"
+                                                  class="image"><img
+                                                  height="150"
+                                                  src="http://physics.codes/images/ecip.jpg"
+                                                  alt="book"></a>
+                                                </span>
+                                        </section>
+                                        <section>
+                                        <h2>Science</h2>
+                                        <ul>
+                                          <li class="fragment">builds and organizes knowledge</li>
+                                          <li class="fragment">tests explanations about the universe</li>
+                                          <li class="fragment">systematically,</li>
+                                          <li class="fragment">objectively,</li>
+                                          <li class="fragment">transparently,</li>
+                                          <li class="fragment">and reproducibly.</li>
+                                        </ul>
+
+                                        <p class="fragment"><b>Otherwise it's not science.</b></p>
+                                        </section>
+                                        <section>
+                                        <h2>Computers</h2>
+                                        <h3>should...</h3>
+                                        <ul>
+                                          <li class="fragment">improve efficiency,</li>
+                                          <li class="fragment">reduce human error,</li>
+                                          <li class="fragment">automate the mundane,</li>
+                                          <li class="fragment">simplify the complex,</li>
+                                          <li class="fragment">and accelerate research.</li>
+                                        </ul>
+                                        <p class="fragment"><b>But scientists don't use them effectively.</b></p>
+                                        </section>
+                                </section>
+				<section>
+                                        <section data-background="http://software-carpentry.org/img/logo-circle-filled.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+                                                <span class="fragment">
+                                                  <a href="www.software-carpentry.org"
+                                                  class="image"><img
+                                                  height="500"
+                                                  src="http://bids.berkeley.edu/sites/default/files/styles/450x254/public/projects/software-carpentry-450x254.png?itok=0XnUCwrr"
+                                                  alt="Software Carpentry"></a>
+                                                </span>
+                                        </section>
+                                        <section data-background="http://software-carpentry.org/img/logo-circle-filled.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+                                                <h2>Software Carpentry Foundation</h2>
+                                                <ul>
+                                                        <li>NumFOCUS umbrella</li>
+                                                        <li>Elected Steering Committee</li>
+                                                        <li>Representative, Expert Advisory Council</li>
+                                                </ul>
+                                        </section>
+                                        <section data-background="http://software-carpentry.org/img/logo-circle-filled.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+                                        <p> We make rearchers in science, engineering, and medicine more productive by
+                                        teaching them basic lab skills for scientific computing.</p>
+                                        </section>
+                                        <section data-background="http://software-carpentry.org/img/logo-circle-filled.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+                                                <span class="fragment">
+                                                  <a href="https://twitter.com/hackerwithin/status/606564957698715650"
+                                                  class="image"><img
+                                                  height="900"
+                                                  src="https://pbs.twimg.com/media/CGrzm_aUQAAUt-n.jpg"
+                                                  alt="workshop"></a>
+                                                </span>
+                                                <span class="fragment">
+                                        </section>
+                                        <section data-background="http://software-carpentry.org/img/logo-circle-filled.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+
+                                        </section>
+                                        <section data-background="http://software-carpentry.org/img/logo-circle-filled.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+                                                <h2>Software Carpentry Workshops</h2>
+                                        <ul>
+                                                <li>Two days of hands-on learning</li>
+                                                <li>Scientists teaching scientists</li>
+                                                <li>Instructors are volunteers</li>
+                                                <li>Materials are all open access</li>
+                                        </ul>
+                                        </section>
+                                        <section>
+                                                <iframe
+                                                  src="http://software-carpentry.org/workshops/previous.html"
+                                                  width="1200" height="500"
+                                                  style="-webkit-transform:scale(1.1);-moz-transform-scale(1.1);"></iframe>
+                                        </section>
+                                        <section>
+                                                <span class="fragment">
+                                                  <a href="http://nbviewer.ipython.org/github/katyhuff/2015-11-06-ncsa/blob/master/swc/swc_plots.ipynb#"
+                                                  class="image"><img
+                                                  height="600"
+                                                  src="./images/workshops.png"
+                                                  alt="workshops"></a>
+                                                </span>
+                                        </section>
+                                        <section>
+                                                <iframe
+                                                  src="http://software-carpentry.org/pages/team.html"
+                                                  width="1200" height="500"
+                                                  style="-webkit-transform:scale(1.1);-moz-transform-scale(1.1);"></iframe>
+                                        </section>
+                                        <section data-background="./images/all.png" data-background-size="cover">
+                                        </section>
+                                        <section data-background="./images/all.png" data-background-size="cover" style="background: rgba(255, 255, 255, 0.95);">
+                                        <ul>
+                                                <li><++></li>
+                                                <li><++></li>
+                                                <li><++></li>
+                                        </ul>
+                                        </section>
+                                        <section>
+                                                <span class="fragment">
+                                                  <a href="http://www.amazon.com/Building-Better-Teacher-Teaching-Everyone/dp/0393081591/"
+                                                  class="image"><img
+                                                  height="600"
+                                                  src="http://ecx.images-amazon.com/images/I/516ehPTB84L._SX344_BO1,204,203,200_.jpg"
+                                                  alt="building a better teacher"></a>
+                                                </span>
+                                                <span class="fragment">
+                                                  <a href="http://www.amazon.com/How-Learning-Works-Research-Based-Principles/dp/0470484101/ref=sr_1_1?s=books&ie=UTF8&qid=1446597488&sr=1-1&keywords=how+learning+works"
+                                                  class="image"><img
+                                                  height="600"
+                                                  src="http://ecx.images-amazon.com/images/I/51b%2Baegk6pL._SX333_BO1,204,203,200_.jpg"
+                                                  alt="How Learning Works"></a>
+                                                </span>
+                                        </section>
+                                        <section>
+                                                <span class="fragment">
+                                                  <a href="http://nbviewer.ipython.org/github/katyhuff/2015-11-06-ncsa/blob/master/swc/swc_plots.ipynb#"
+                                                  class="image"><img
+                                                  height="600"
+                                                  src="./images/workshops.png"
+                                                  alt="workshops"></a>
+                                                </span>
+                                        </section>
+                                        <section>
+                                                <span class="fragment">
+                                                  <a href="http://nbviewer.ipython.org/github/katyhuff/2015-11-06-ncsa/blob/master/swc/swc_plots.ipynb#"
+                                                  class="image"><img
+                                                  height="600"
+                                                  src="./images/workshop_sizes.png"
+                                                  alt="workshop sizes"></a>
+                                                </span>
+                                        </section>
+                                        <section>
+                                                <span class="fragment">
+                                                  <a href="http://nbviewer.ipython.org/github/katyhuff/2015-11-06-ncsa/blob/master/swc/swc_plots.ipynb#"
+                                                  class="image"><img
+                                                  height="600"
+                                                  src="./images/instructors_vs_workshops.png"
+                                                  alt="instructors vs workshops"></a>
+                                                </span>
+                                        </section>
+                                        <section>
+                                                <span class="fragment">
+                                                  <a href="<+linkurl+>"
+                                                  class="image"><img
+                                                  height="200"
+                                                  src="<+srcurl+>"
+                                                  alt="<+alttext+>"></a>
+                                                </span>
+                                        </section>
 				</section>
 				<section>
                                         <section>
@@ -60,7 +347,7 @@
                                                   src="http://thehackerwithin.github.io/images/thw_icon.png"
                                                   alt="THW"></a>
                                                 </span>
-                                                <p class="fragment">Peer-led organization on scientific computing best practices.</p>
+                                                <p class="fragment">Peer-led organization for scientific computing best practices.</p>
                                         </section>
 					<section>
                                         <a 
@@ -129,8 +416,6 @@
                                                   alt="UIUC THW"></a>
                                                 </span>
                                         </section>
-                                </section>
-                                <section>
 					<section>
                                         <h1>Community</h1>
                                         <ul>
@@ -146,8 +431,6 @@
                                                   src="./images/2010-01-14.jpg"
                                                   alt="excellent team"></a>
                                         </section>
-                                </section>
-                                <section>
 					<section>
                                         <h1>Peer-Driven</h1>
                                         <ul>
@@ -161,25 +444,6 @@
                                         <section>
                                         <iframe src="http://thehackerwithin.github.io/berkeley/previous.html" width="100%" height=600  frameborder="0" marginwidth="0" marginheight="0" scrolling="yes" style="border:0px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
                                        </section>
-                                </section>
-                                <section>
-					<section>
-                                        <h1>Communication</h1>
-                                        <ul>
-                                                <li>twitter is fun</li>
-                                                <li>email listhosts are helpful</li>
-                                                <li>slack is better</li>
-                                                <li>Ali is best</li>
-                                        </ul>
-                                        </section>
-					<section>
-                                        <a 
-                                                href="https://bids.berkeley.edu"
-                                                  class="image"><img 
-                                                  height="890"
-                                                  src="./images/this_week_at_bids.png"
-                                                  alt="this week at bids"></a>
-                                        </section>
 					<section>
                                         <a 
                                                 href="http://thehackerwithin.github.io/images/cpp_boot1.jpg"
@@ -220,61 +484,255 @@
                                </section>
                                 <section>
                                         <section>
-                                        <h2>Links</h2>
-                                        <ul>
-                                        <ul>
-                                        <li><a href="thehackerwithin.github.io"> thehackerwithin.github.io </a></li>
-                                        <li><a href="https://groups.google.com/forum/#!forum/hacker-within"> google group</a></li>
-                                        <li><a href="https://thehackerwithin.slack.com/messages"> thehackerwithin.slack.com</a></li>
-                                        </ul>
+                                                <span class="fragment">
+                                                <a
+                                                  href="http://databears.berkeley.edu"
+                                                  class="image"><img
+                                                  src="http://databears.berkeley.edu/sites/default/files/ds-blueprint.jpg"
+                                                  alt="databears"></a>
+                                                </span>
                                         </section>
-				</section>
-				<section>
-					<h1>THE END</h1>
-                                        <h3>Katy Huff </h3>
-                                        <a href="https://katyhuff.github.io/2015-11-06-ncsa">katyhuff.github.io/2015-11-06-ncsa</a> 
+                               </section>
+                                <section>
+                                        <section>
+                                                <span class="fragment">
+                                                <a
+                                                  href="http://physics.codes"
+                                                  class="image"><img
+                                                  src="https://covers.oreillystatic.com/images/0636920033424/lrg.jpg"
+                                                  alt="book"></a>
+                                                </span>
+                                        </section>
+                                        <section>
+                                                <span class="fragment">
+                                                <a
+                                                  href="http://physics.codes"
+                                                  class="image"><img
+                                                  width="60%"
+                                                  src="http://www.womenofbadassery.com/wp-content/uploads/2015/04/toni-morrison.jpg"
+                                                  alt="it was anthony's idea"></a>
+                                                </span>
+                                                <p><span class="fragment">
+                                                 (Anthony talked me into it.)
+                                                </span>
+                                                </p>
+                                        </section>
+                                        <section data-background="https://raw.githubusercontent.com/katyhuff/town-hall/gh-pages/images/blame.png" data-background-size="contain"> 
+                                        </section>
+                                        <section data-background="https://raw.githubusercontent.com/katyhuff/town-hall/gh-pages/images/blame.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+                                         <h3>Getting Started</h3>
+                                                <br/>
+                                                <br/>
+                                                <span class="fragment">
+                                                <ul>
+                                                  <li>Chapter 1 - Introduction to the Command Line</li>
+                                                  <li>Chapter 2 - Programming Blast Off with Python</li>
+                                                  <li>Chapter 3 - Essential Containers</li>
+                                                  <li>Chapter 4 - Flow Control and Logic</li>
+                                                  <li>Chapter 5 - Operating with Functions</li>
+                                                  <li>Chapter 6 - Classes and Objects</li>
+                                                </ul>
+                                                </span>
+                                                <br/>
+                                                <br/>
+                                        </section>
+                                        <section data-background="http://physics.codes/images/n-body-save-t0.001.png" data-background-size="contain"> 
+                                        </section>
+                                        <section data-background="http://physics.codes/images/n-body-save-t0.001.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+                                         <h3>Getting It Done</h3>
+                                                <br/>
+                                                <br/>
+                                                <span class="fragment">
+                                                <ul>
+                                                  <li>Chapter 7 - Analysis and Visualization</li>
+                                                  <li>Chapter 8 - Regular Expressions</li>
+                                                  <li>Chapter 9 - NumPy: Thinking in Arrays</li>
+                                                  <li>Chapter 10 - Storing Data: Files and HDF5</li>
+                                                  <li>Chapter 11 - Important Data Structures in Physics</li>
+                                                  <li>Chapter 12 - Performing in Parallel</li>
+                                                  <li>Chapter 13 - Deploying Software</li>
+                                                </span>
+                                                <br/>
+                                                <br/>
+                                        </section>
+                                        <section data-background="http://physics.codes/images/runsnake-fh.png" data-background-size="contain">
+                                        </section>
+                                        <section data-background="http://physics.codes/images/runsnake-fh.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+                                         <h3>Getting It Right</h3>
+                                                <br/>
+                                                <br/>
+                                                <span class="fragment">
+                                                <ul>
+                                                  <li>Chapter 14 - Building Software Pipelines</li>
+                                                  <li>Chapter 15 - Local Version Control</li>
+                                                  <li>Chapter 16 - Remote Version Control</li>
+                                                  <li>Chapter 17 - Debugging</li>
+                                                  <li>Chapter 18 - Testing</li>
+                                                </ul>
+                                                </span>
+                                                <br/>
+                                                <br/>
+                                        </section>
+                                        <section data-background="http://physics.codes/images/self_assign.png" data-background-size="contain">
+</section>
+                                        <section data-background="http://physics.codes/images/self_assign.png" data-background-size="contain" style="background: rgba(255, 255, 255, 0.95);">
+                                         <h3>Getting It Out There</h3>
+                                                <br/>
+                                                <br/>
+                                                <span class="fragment">
+                                                <ul>
+                                                  <li>Chapter 19 - Documentation</li>
+                                                  <li>Chapter 20 - Publication</li>
+                                                  <li>Chapter 21 - Collaboration</li>
+                                                  <li>Chapter 22 - Licenses, Ownership, and Copyright</li>
+                                                  <li>Chapter 23 - Further Musings</li>
+                                                </ul>
+                                                </span>
+                                                <br/>
+                                                <br/>
+                                        </section>
+                                </section>
+                                <section>
+                                        <section>
+                                        <h2>Acknowledgements</h2>
+                                                <a
+                                                  href="http://anthony.scopatz.com"
+                                                  class="image"><img
+                                                  src="http://physics.codes/images/anthony.jpg"
+                                                  alt="book"></a>
+                                                <p>
+                                                  Prof. Anthony M. Scopatz
+                                               </p>
+                                        </section>
+                                        <section>
+                                        <h2>Acknowledgements</h2>
+                                                <a
+                                                  href="http://software-carpentry.org"
+                                                  class="image"><img
+                                                  width="30%"
+                                                  src="http://bids.berkeley.edu/sites/default/files/styles/450x254/public/projects/software-carpentry-450x254.png?itok=0XnUCwrr"
+                                                  alt="Software Carpentry"></a>
+                                                <a
+                                                  href="http://thehackerwithin.github.io"
+                                                  class="image"><img
+                                                  width="30%"
+                                                  src="http://thehackerwithin.github.io/images/thw_icon.png"
+                                                  alt="THW"></a>
+                                                 <p>This book was heavily inspired by the work of
+                                                  <a href="http://software-carpentry.org/">Software Carpentry</a> and
+                                                  <a href="http://thehackerwithin.github.io/">The Hacker Within</a>.
+                                                  We are thrilled to see <i>Effective Computation in Physics</i>
+                                                  come to press and spread the
+                                                  joys of computation further into the physical sciences.
+                                                  In case you were wondering, the cuddly creature on the cover is a
+                                                  <a href="http://en.wikipedia.org/wiki/Bobtail_squid">bobtail
+                                                  squid</a>.
+                                                  </p>
+                                        </section>
+                                </section>
+                                <section>
+                                        <section>
+                                        <h2>Links!</h2>
+                                        <ul>
+                                                <li><a href="thehackerwithin.github.io"> thehackerwithin.github.io </a></li>
+                                                <li><a href="https://groups.google.com/forum/#!forum/hacker-within"> google group</a></li>
+                                                <li><a href="https://thehackerwithin.slack.com/messages"> thehackerwithin.slack.com</a></li>
+                                                <li>
+                                                <a href="http://physics.codes/">
+                                                        physics.codes
+                                                </a></li>
 
-<br/>
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">A Computational Future for Science Education</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://katyhuff.github.io" property="cc:attributionName" rel="cc:attributionURL">Kathryn Huff</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://katyhuff.github.io/2015-11-06-ncsa" rel="dct:source">http://katyhuff.github.io/2015-11-06-ncsa</a>.  
-				</section>
+                                                <li>
+                                                <a href="http://github.com/physics.codes/examples">
+                                                        github.com/physics.codes/examples
+                                                </a></li>
 
-			</div>
+                                                <li>
+                                                <a href="http://shop.oreilly.com/product/0636920033424.do">
+                                                        shop.oreilly.com/product/0636920033424.do
+                                                </a></li>
+                                        </ul>
+                                        <p>
+                                        <a
+                                                href="http://physics.codes"
+                                                class="image"><img
+                                                width="25%"
+                                                src="https://covers.oreillystatic.com/images/0636920033424/lrg.jpg"
+                                                alt="book"></a>
+                                        </p>
+                                        </section>
+                                        <section>
+                                        <h2>Katy Is Supported By</h2>
+                                        <span class="fragment">
+                                                <a href="http://bids.berkeley.edu"
+                                                        class="image"><img
+                                                        width="25%"
+                                                        src="http://bids.berkeley.edu/sites/all/themes/bids/logo.png"
+                                                        alt="BIDS Logo"></a>
+                                        </span>
+                                        <span class="fragment">
+                                                <a href="http://nssc.berkeley.edu"
+                                                        class="image"><img
+                                                        width="25%"
+                                                        src="http://nssc.berkeley.edu/images/NSSC_newLogo_medium.png"
+                                                        alt=""></a>
+                                        </span>
+                                        <span class="fragment">
+                                                <a href="http://fhr.nuc.berkeley.edu"
+                                                        class="image"><img
+                                                        width="25%"
+                                                        src="http://fhr.nuc.berkeley.edu/wp-content/uploads/2014/10/FHR-logo-300x175.jpg"
+                                                        alt="FHR Logo"></a>
+                                        </span>
+                                        </section>
+                                                </section>
+                                        <section>
+                                                <section>
+                                                <h1>THE END</h1>
+                                                <h3>Katy Huff </h3>
+                                                <a href="https://katyhuff.github.io/2015-11-06-ncsa">katyhuff.github.io/2015-11-06-ncsa</a> 
 
-		</div>
+                                                <br/>
+                                                <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">A Computational Future for Science Education</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://katyhuff.github.io" property="cc:attributionName" rel="cc:attributionURL">Kathryn Huff</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="http://katyhuff.github.io/2015-11-06-ncsa" rel="dct:source">http://katyhuff.github.io/2015-11-06-ncsa</a>.  
+                                                </section>
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+                                </div>
 
-		<script>
+                        </div>
 
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
+                        <script src="lib/js/head.min.js"></script>
+                        <script src="js/reveal.min.js"></script>
 
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                        <script>
 
-				// Parallax scrolling
-				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-				// parallaxBackgroundSize: '2100px 900px',
+                                // Full list of configuration options available here:
+                                // https://github.com/hakimel/reveal.js#configuration
+                                Reveal.initialize({
+                                        controls: true,
+                                        progress: true,
+                                        history: true,
+                                        center: true,
 
-				// Optional libraries used to extend on reveal.js
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                                        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                                        transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+                                        // Parallax scrolling
+                                        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+                                        // parallaxBackgroundSize: '2100px 900px',
+
+                                        // Optional libraries used to extend on reveal.js
+                                        dependencies: [
+                                        { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                                        { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                        { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                                        { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                                        { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                                        { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
                                         { src: 'plugin/math/math.js', async: true }
-				]
-			});
+                                        ]
+                                });
 
-		</script>
+                        </script>
 
-	</body>
-</html>
+                </body>
+        </html>
